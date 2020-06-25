@@ -1,0 +1,66 @@
+<html>
+<head>
+
+</head>
+    <body>
+        
+        <div id = "root"></div>
+        
+        <script>
+
+
+        
+        let root = document.getElementById("root")
+        let header = document.createElement("h1")
+        header.innerHTML = "Priyanka Farrell"
+        root.append(header)
+
+        let navbar = document.createElement("ul")
+        // navbar.innerHTML=" this is my nav bar"
+        root.append(navbar)
+        
+        const CreateNavItem = (title)=> {
+            let item1 = document.createElement("li")
+            item1.innerHTML = title
+            item1.style.padding = "10px 20px"
+            navbar.append(item1)
+            
+
+            
+        }
+        
+        CreateNavItem("Python Projects")
+        CreateNavItem ("JS Projects")
+        CreateNavItem("Html/CSS Projects")
+        CreateNavItem("React Projects")
+    
+
+        
+        header.style.textAlign = "Center"  
+        
+        navbar.style.justifyContent = "Center"  
+        navbar.style.color = "blue"
+        navbar.style.fontFamily = "Georgia"
+        navbar.style.padding = "10px 10px"
+        navbar.style.display= "flex"
+        navbar.style.flexWrap = "wrap"
+        navbar.style.listStyle = "None"
+
+        root.style.backgroundColor = "lightblue"
+
+        let photo = document.createElement("Image")
+        photo.innerHTML= "<img src= 'portrait.jpg' width = '200px'>"
+        photo.style.padding = "10x 10px"
+        photo.style.adjustContent = "Center"
+        root.append(photo)
+
+
+        let aboutme_text = document.createElement("p")
+        aboutme_text = "Semper suscipit at viverra ornare nullam sociosqu sodales sollicitudin. Enim viverra gravida vel cursus lacinia vestibulum eget suscipit vitae! Maecenas suscipit luctus arcu lectus, habitasse luctus erat nisl mattis. Luctus torquent ultricies suscipit rutrum enim euismod urna mus cum facilisi. Nunc ultrices nam iaculis faucibus dui. Viverra tortor mattis dis primis urna sagittis elementum litora."
+        root.append(aboutme_text)
+        
+    
+        </script>
+    </body>
+
+</html>
